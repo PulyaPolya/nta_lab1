@@ -258,10 +258,12 @@ def brilhart_moris(n,write_to_file=False):
     if write_to_file:
         f.write_to_csv(write_to_file, str(result))
     return result
-arr = [99400891, 9073333, 12422253, 73220491]
+'''
+arr = [99400891, 9073333, 12422253]
 for n in arr:
 
     start = time.time()
     d = brilhart_moris(n)
     end = time.time()
     print('n= ', n, ' d= ', d, ' ', end - start, 's')
+    '''

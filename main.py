@@ -60,4 +60,4 @@ def algorithm(n, write_to_file=False):
     else:
         alg(n, write_to_file)
 
-algorithm([25169050345, 1000, 1234], write_to_file='eggs.csv')
+#algorithm([25169050345, 1000, 1234], write_to_file='eggs.csv')
