@@ -61,5 +61,5 @@ def algorithm(n, write_to_file=False):
         alg(n, write_to_file)
 
 
-n = input()
+n = int(input())
 algorithm(n)
