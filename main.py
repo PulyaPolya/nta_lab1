@@ -4,7 +4,7 @@ import brilhart as b
 def alg(n, write_to_file=False):
     primes = b.get_primes()
     answ = f.count_solovei(n, 10)
-    if answ == 'yes':
+    if answ == '    yes':
         if write_to_file:
             f.write_to_csv(write_to_file, (str(n)+ ' is prime by solovei method'))
         else:
@@ -60,4 +60,6 @@ def algorithm(n, write_to_file=False):
     else:
         alg(n, write_to_file)
 
-#algorithm([25169050345, 1000, 1234], write_to_file='eggs.csv')
+
+n = input()
+algorithm(n)
