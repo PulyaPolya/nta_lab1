@@ -1,9 +1,8 @@
 import math
 import functions as f
-from math import exp, sqrt, log, log2
+from math import exp, sqrt, log2
 from vectors import add_one
 import numpy as np
-import time
 
 
 def get_zepnaya_fraction_a(n, k):

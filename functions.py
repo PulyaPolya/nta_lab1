@@ -1,6 +1,5 @@
 import random
 import math
-import time
 import csv
 def gcd(x, y):
     if x > 0:
@@ -258,3 +257,5 @@ def get_minus(a , n):
         return a_minus%n
     else:
         return ':('
+
+
