@@ -3,7 +3,7 @@ import brilhart as b
 def alg(n, write_to_file=False):
     primes = b.get_primes()
     answ = f.count_solovei(n, 10)
-    if answ == '    yes':
+    if answ == 'yes':
         if write_to_file:
             f.write_to_csv(write_to_file, (str(n)+ ' is prime by solovei method'))
         else:
@@ -55,7 +55,7 @@ def algorithm(n, write_to_file=False):
                 f.write_to_csv(write_to_file, ('\n'))
             alg(i, write_to_file)
 
-                #
+
     else:
         alg(n, write_to_file)
 
@@ -63,9 +63,9 @@ def algorithm(n, write_to_file=False):
 n = int(input())
 print('here is the result by main algorithm')
 algorithm(n)
+print('now testing other algorithms')
 print(f.count_pollard_v1(n), 'by pollard')
 print(f.try_divide(n), 'by пробні ділення')
 print('to run Solovei_Strassen method, please insert k')
 k = int(input())
 print(f.count_solovei(n, k), 'by solovei')
-
